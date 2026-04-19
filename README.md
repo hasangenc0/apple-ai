@@ -34,9 +34,26 @@ ai --model-info
 ```bash
 brew tap hasangenc0/tap
 brew install ai
-ai --model-info
-ai "Summarize why on-device AI can improve privacy in 3 bullet points."
 ```
+
+Then choose the mode you want:
+
+- Check model readiness and setup status:
+  ```bash
+  ai --model-info
+  ```
+- Ask a single one-shot question:
+  ```bash
+  ai "Summarize why on-device AI can improve privacy in 3 bullet points."
+  ```
+- Start an interactive conversation:
+  ```bash
+  ai --interactive
+  ```
+- Start interactive mode with a first message:
+  ```bash
+  ai "What is 2+2?" --interactive
+  ```
 
 ## Build from source
 
@@ -77,6 +94,9 @@ Usage:
   ai <prompt words>
   ai --model-info
   ai --status
+  ai --interactive
+  ai -i
+  ai "<prompt>" --interactive
 ```
 
 ## Troubleshooting
